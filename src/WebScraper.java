@@ -8,6 +8,14 @@ public class WebScraper {
         System.out.println(fullText);
         String[] splitArray = fullText.split("\\s+", 0);
         System.out.println(splitArray.length);
+        String wordToCount = "the";
+        int countWord = 0;
+        for (int i = 0; i < splitArray.length; i++) {
+            if (splitArray[i].equals(wordToCount)) {
+                countWord++;
+            }
+        }
+        System.out.println(countWord);
     }
 
     /**
